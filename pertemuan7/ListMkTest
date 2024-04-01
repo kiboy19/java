@@ -1,0 +1,19 @@
+package pertemuan7;
+
+public class ListMkTest {
+    public static void main(String[] args) {
+        ListMatakuliah list = new ListMatakuliah();
+        
+        list.addHead(new Matakuliah("IF001", "Dasar Pemrograman", 4));
+        list.addHead(new Matakuliah("IF002", "Pemrograman Web", 3));
+        list.addHead(new Matakuliah("IF003", "Struktur Diskrit", 3));
+        list.addHead(new Matakuliah("IF004", "Konstruksi PL Berorientasi Objek", 3));
+        list.displayElement();
+        
+     // Contoh pemanggilan fungsi find
+        System.out.println("Matakuliah dengan kode IF003 ditemukan: " + list.find("IF003"));
+        
+        // Contoh pemanggilan fungsi size
+        System.out.println("Jumlah matakuliah dalam list: " + list.size());
+    }
+}
